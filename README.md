@@ -33,7 +33,7 @@ wrangler dev
 
 https://www.cloudmailin.com/
 
-![image-20230815110530250](D:\youve-got-mail\docs\cloudmailin.png)
+![image-20230815110530250](docs/cloudmailin.png)
 
 POST Format选择JSON Normalized.
 
@@ -59,7 +59,7 @@ wrangler dev
 
 ### 效果
 
-![image-20230815112509336](D:\youve-got-mail\docs\final.png)
+![image-20230815112509336](docs/final.png)
 
 可以自己给自己发几条消息测试）
 
