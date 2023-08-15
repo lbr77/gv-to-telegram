@@ -60,7 +60,12 @@ const handler: ExportedHandler<Environment,null> = {
       if (method === "POST") {
         if(pathname=== environment.PATH){
           const requestBody = (await request.json()) as RequestBody;
-          await sendMessage(ParseHTML(requestBody.html));
+          if(environment.AUTH === 'true'){
+            await sendMessage(requestBody.plain);
+          }
+          else {
+            await sendMessage(ParseHTML(requestBody.html));
+          }
           return new Response("Success!");
         }
         return new Response("Not found.",{status:404});

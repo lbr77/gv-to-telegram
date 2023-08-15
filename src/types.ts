@@ -44,4 +44,5 @@ export interface Environment {
     TELEGRAM_TOKEN: string;
     TELEGRAM_USER_ID: string;
     PATH: string;
+    AUTH: string;
 }
